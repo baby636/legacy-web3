@@ -12,7 +12,9 @@
     "lint": "eslint . --ext js,json",
     "lint:fix": "eslint . --ext js,json --fix",
     "prepublishOnly": "yarn lint && yarn build",
-    "test": "yarn lint"
+    "test": "yarn lint",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": "git@github.com:MetaMask/legacy-web3.git",
   "author": "Erik Marks <rekmarks@protonmail.com>",
@@ -24,7 +26,9 @@
     "url": "https://github.com/MetaMask/legacy-web3/issues"
   },
   "homepage": "https://github.com/MetaMask/legacy-web3#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@snyk/protect": "latest"
+  },
   "devDependencies": {
     "@metamask/detect-provider": "^1.2.0",
     "@metamask/eslint-config": "^3.1.0",
@@ -36,5 +40,6 @@
     "rollup": "^2.18.1",
     "rollup-plugin-terser": "^6.1.0",
     "web3": "0.20.7"
-  }
+  },
+  "snyk": true
 }

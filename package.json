@@ -29,12 +29,12 @@
     "@metamask/detect-provider": "^1.2.0",
     "@metamask/eslint-config": "^3.1.0",
     "@rollup/plugin-commonjs": "^13.0.0",
-    "@rollup/plugin-node-resolve": "^8.1.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-json": "^2.1.1",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "eslint": "^8.46.0",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-json": "^3.0.0",
     "rollup": "^2.18.1",
     "rollup-plugin-terser": "^6.1.0",
-    "web3": "0.20.7"
+    "web3": "1.2.0"
   }
 }
